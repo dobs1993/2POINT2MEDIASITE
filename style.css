@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Util */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main */
+
+body {
+    overflow: hidden;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background: linear-gradient(45deg, red, white);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.container img {
+    width: 125px;
+    margin-right: 4rem;
+}
+
+.container ul {
+    font-size: 1.75rem;
+    color: #fff9f9;
+}
+
+.container ul li {
+    margin-bottom: 1.5rem;
+}
+
+.container h2 {
+    align-self: flex-end;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.container h2 a {
+    color: #fff;
+    margin-right: 0.25rem;
+}
+
+.container ul li:hover,
+.container h2:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+h2 {
+    border: 2px solid white;
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
+    color: rgb(252, 4, 4);
+}
+
+/* Media */
+
+@media (max-width:650px){
+
+    .container {
+        padding: 0 5rem;
+    }
+    .container img {
+    margin: 0 auto;
+    }
+}
+
+@media (max-width:399px){
+    .container img {
+    width: 110px;
+    }
+
+    .container ul {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 330px){
+    .container img {
+    width: 70px;
+    }
+
+    .container ul {
+        font-size: 1rem;
+    }
+}
+
+/* Landscape Mode */
+
+@media (max-height: 550px){
+    .container ul,
+    .container h2 {
+        font-size: 1rem;
+    }
+    .container {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-height: 370px){
+    .container ul li {
+    margin-bottom: .5rem;
+}
+}
